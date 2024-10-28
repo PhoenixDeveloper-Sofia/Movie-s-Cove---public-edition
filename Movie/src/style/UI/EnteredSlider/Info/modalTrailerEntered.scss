@@ -1,0 +1,15 @@
+.modalTrailerEntered{
+        min-width: 75dvw;
+        width: 95dvh;
+        height: 80dvh;
+        overflow: hidden;
+        @include flex-c;
+
+        iframe {
+            @include center-screen;
+            width: 100%;
+            border-radius: 8px;
+            height: 100%;
+            border: none;
+        }
+}

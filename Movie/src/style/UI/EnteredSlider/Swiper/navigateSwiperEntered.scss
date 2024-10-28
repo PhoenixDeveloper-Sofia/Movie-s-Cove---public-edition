@@ -1,0 +1,10 @@
+.swiperEntered-navigate {
+    @include flex;
+    gap: 16px;
+    padding-bottom: 40px;
+    padding-left: 12dvh;
+
+    &__prev{
+        transform: rotate(180deg);
+    }
+}

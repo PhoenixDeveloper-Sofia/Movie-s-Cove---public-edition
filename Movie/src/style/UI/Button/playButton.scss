@@ -1,0 +1,10 @@
+.playButton {
+    @include button-ban;
+    display: inline-flex;
+    align-items: center;
+    padding: 15.5px 28.5px;
+    gap: 12px;
+    backdrop-filter: blur(3px);
+    @include img($bs: 100%);
+    background-image: url(../../../../src/img/UI/Button/ColorButton-bgImg.svg);
+}

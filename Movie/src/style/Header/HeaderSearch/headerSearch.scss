@@ -1,0 +1,32 @@
+.headerSearch {
+    @include flex;
+    min-height: 32px;
+    min-width: 60px;
+    position: relative;
+    font-size: 18px;
+
+
+    &__input {
+        height:100%;
+        border-radius: 2px;
+        backdrop-filter: blur(12px);
+        background: $background-search;
+        font-size: 18px;
+    }
+
+    &__button {
+        position: absolute;
+        right: 0;
+        padding-right: 10px;
+        border-left: 1px solid $light ;
+        padding-left: 30px;
+
+        &:hover {
+            img {
+                scale: 1.1;
+                transition: 200ms ease-in-out;
+            }
+
+        }
+    }
+}

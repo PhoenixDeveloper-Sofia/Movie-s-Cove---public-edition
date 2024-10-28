@@ -1,0 +1,28 @@
+.viewInfoBanner {
+    position: absolute;
+    top: 0;
+
+    &__position{
+        height: 34dvh;
+    }
+    
+    &__video {
+        position: relative;
+        min-width: 100%;
+        width: 100dvw;
+        height: 35dvw;
+        overflow: hidden;
+        @include flex-c;
+
+        &::after {
+            @include pseudo-el;
+            z-index: 2;
+            background: $gradient-blackout-viewInfoBanner 
+              }
+        iframe {
+            width: 100%;
+            height: 130%;
+        }
+
+    }
+}

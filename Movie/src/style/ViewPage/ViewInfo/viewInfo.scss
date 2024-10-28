@@ -1,0 +1,13 @@
+.viewInfo {
+    width: 100dvw;
+
+    &__text {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        padding: 11dvh 80px 0px 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,42 @@
+.digitalTopSwiper {
+
+    &__slider {
+        position: relative;
+        height: 448px;
+        width: auto;
+        display: flex;
+        align-items: end;
+    }
+
+    &__img {
+        height: 200px;
+        padding-right: 280px;
+    }
+
+    &__bannerPosition {
+        position: absolute;
+        right: 0;
+    }
+
+    &__banner-box {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 330px;
+    }
+
+    &__banner-shadow,
+    &__banner {
+        height: 445px;
+        width: 300px;
+        object-fit: cover;
+    }
+
+    &__banner-shadow {
+        filter: blur(8px);
+    }
+
+    &__banner {
+        border-radius: 8px;
+    }
+}

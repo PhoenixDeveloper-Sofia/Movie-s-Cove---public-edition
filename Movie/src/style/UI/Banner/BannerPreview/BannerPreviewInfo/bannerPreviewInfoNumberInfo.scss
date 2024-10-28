@@ -1,0 +1,28 @@
+.bannerPreviewInfoNumberInfo {
+    @include flex;
+    padding-top: 15px;
+    gap: 10px;
+    font-family: $font-family-support;
+
+    img {
+        max-height: 22px;
+    }
+
+    @media only screen and (max-width: 750px) {
+        @include font ($f-s: 12px);
+
+
+        img {
+            max-height: 14px;
+        }
+    }
+
+    @media only screen and (max-width: 550px) {
+        @include font ($f-s: 10px);
+
+
+        img {
+            max-height: 12px;
+        }
+      }
+}

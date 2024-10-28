@@ -1,0 +1,31 @@
+//global
+$background-website:#080A10;
+$font-family-website: "Raleway", sans-serif;
+$font-family-support: "Montserrat", sans-serif;
+
+//
+$gradient: linear-gradient(99deg, #4f62e3 12.31%, #db8185 43.43%, #e8af9c 69.14%, #f6ad53 100%);
+$gradient-blackout-full:linear-gradient(92deg, rgba(8, 10, 17, 0.9) 0%, rgba(8, 10, 17, 0) 71.35%), linear-gradient(180deg, rgba(8, 10, 17, 0.7) 0%, rgba(8, 10, 17, 0.08) 9.87%, rgba(8, 10, 17, 0) 80.5%, #080a11 96.5%);
+$gradient-blackout-medium :linear-gradient(91deg, rgba(8, 10, 17, 0.9) 0%, rgba(8, 10, 17, 0) 23.63%), linear-gradient(180deg, #000 0%, rgba(8, 10, 17, 0.1) 5.45%, rgba(8, 10, 17, 0) 10.13%, rgba(8, 10, 17, 0) 92.82%, rgba(8, 10, 17, 0) 96.26%, #080a11 100%);
+$gradient-blackout-viewInfoBanner : linear-gradient(180deg, rgba(8, 10, 16, 0.7) 0%, rgba(8, 10, 16, 0) 19.5%), linear-gradient(360deg, #080a10 4.64%, rgba(8, 10, 16, 0.8) 18.74%, rgba(8, 10, 16, 0) 46.5%), linear-gradient(90deg, #080a10 11%, rgba(8, 10, 16, 0.3) 39%, rgba(8, 10, 16, 0.3) 61%, #080a10 88%);  ;
+$gradient-text:linear-gradient(123deg, #4e61e2 0%, #db8185 30.27%, #e8af9c 58.77%, rgba(252, 172, 50, 0.75) 93.71%);
+$gradient-banner-background:linear-gradient(135deg, rgba(84, 225, 255, 0.8) 17%, rgba(255, 77, 109, 0.8) 77%);
+$gradient-sort-active: linear-gradient(99deg, rgba(79, 98, 227, 0.4) 12.31%, rgba(219, 129, 133, 0.4) 43.43%, rgba(232, 175, 156, 0.4) 69.14%, rgba(246, 173, 83, 0.4) 100%);
+
+$light: #F7F7F7;
+$accent:#F8B319;
+
+$button-border: 1px solid rgba(255, 255, 255, 0.6);
+
+$background-search: rgba(191, 191, 191, 0.25);
+
+$filter-title-background: rgba(95, 95, 95, 0.15);
+$filter-title-background-hover:rgba(167, 167, 167, 0.15);
+
+$viewInfoDetails-background: rgba(84, 84, 84, 0.15);
+
+$filter-title-background-first: linear-gradient(130deg, rgba(76, 97, 227, 0.5) 0%, rgba(95, 95, 95, 0.15) 55.6%, rgba(95, 95, 95, 0.15) 99.5%);
+$filter-title-background-first-hover: linear-gradient(130deg, rgba(76, 97, 227, 0.5) 0%, rgba(167, 167, 167, 0.15) 55.6%, rgba(167, 167, 167, 0.15) 99.5%);
+
+$filter-title-background-last:linear-gradient(317deg, rgba(248, 179, 25, 0.3) 0%, rgba(95, 95, 95, 0.15) 40%, rgba(95, 95, 95, 0.15) 100%);
+$filter-title-background-last-hover:linear-gradient(317deg, rgba(248, 179, 25, 0.3) 0%, rgba(167, 167, 167, 0.15) 40%, rgba(167, 167, 167, 0.15) 100%);

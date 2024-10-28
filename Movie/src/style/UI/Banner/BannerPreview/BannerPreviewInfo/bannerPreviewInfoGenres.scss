@@ -1,0 +1,24 @@
+.bannerPreviewInfoGenres {
+    opacity: 0.8;
+    flex-wrap: wrap;
+    display: flex;
+
+    li {
+        padding-bottom: 3px;
+        padding-right: 7px;
+        @include flex;
+        gap: 7px;
+    }
+
+    @media only screen and (max-width: 750px) {
+        @include font ($f-s: 10px);
+    }
+
+    @media only screen and (max-width: 550px) {
+        @include font ($f-s: 8px);
+    }
+    @media only screen and (max-width: 350px) {
+        @include font ($f-s: 7px);
+       }
+
+}

@@ -1,0 +1,55 @@
+.bannerEntered {
+    @include img;
+    opacity: 0.9;
+    overflow: hidden;
+
+    &__video {
+        position: relative;
+        min-width: 100dvw;
+        width: 200dvh;
+        height: 100dvh;
+        overflow: hidden;
+        @include flex-c;
+
+        &::after {
+            @include pseudo-el;
+            z-index: 2;
+            background: $gradient-blackout-full;
+        }
+
+        iframe {
+            width: 100%;
+            height: 130%;
+        }
+
+    }
+    
+    &__banner-box {
+        height: 100dvh;
+        width: 100dvw;
+        padding-right: 14dvw;
+        padding-top: 20px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        &::after {
+            @include pseudo-el;
+            z-index: 2;
+            background: $gradient-blackout-medium;
+        }
+    }
+
+    &__banner-shadow,
+    &__banner {
+        max-height: 840px;
+    }
+
+    &__banner-shadow {
+        filter: blur(48px);
+    }
+
+    &__banner {
+        border-radius: 8px;
+    }
+}

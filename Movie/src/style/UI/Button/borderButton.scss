@@ -1,0 +1,5 @@
+.borderButton {
+    @include button-ban;
+    padding: 14.5px 28.5px;
+    @include  button-transparent;
+}

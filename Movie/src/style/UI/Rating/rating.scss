@@ -1,0 +1,9 @@
+.rating{
+    @include flex;
+    gap: 8px;
+    font-family: $font-family-support;
+
+    &__votes{
+        opacity: 0.8;
+    }
+}

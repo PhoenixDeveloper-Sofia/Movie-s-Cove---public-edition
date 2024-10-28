@@ -1,0 +1,23 @@
+.filterMap{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 100px 10px 20px 10px;
+    width: 100dvw;
+    max-width: 1660px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 8;
+
+    &__clearFilter{
+        padding-bottom: 8px;
+        opacity: 0.3;
+        @include font($f-w:600);
+        &:hover{
+            @include gradient-text;
+            opacity: 1;
+            transform: scale(1.03);
+            transition-duration: 250ms;
+        }
+    }
+}

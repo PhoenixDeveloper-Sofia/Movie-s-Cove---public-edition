@@ -1,0 +1,39 @@
+.viewInfoMain{
+    display: flex;
+    max-width: 1350px;
+    gap:52px;
+    padding-bottom: 30px;
+
+    @media only screen and (max-width: 1250px) {
+        gap:40px;
+      }
+      @media only screen and (max-width: 730px) {
+        gap:20px;
+      }
+
+    &__banner-box {
+      position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 25%;
+        max-height: 490px;
+        position: sticky;
+        top: 20px;
+       
+    }
+
+    &__banner-shadow,
+    &__banner {
+        height: auto;
+        max-height: 490px;
+    }
+
+    &__banner-shadow {
+        filter: blur(35px);
+    }
+
+    &__banner {
+        border-radius: 4px;
+    }
+}

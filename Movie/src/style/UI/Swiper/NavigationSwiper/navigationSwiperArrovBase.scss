@@ -1,0 +1,29 @@
+.navigationSwiperArrovBase {
+
+  &__button-prev {
+    @include swiperButton;
+    left: 0;
+
+    &::after {
+      @include pseudo-el;
+      z-index: -1;
+      opacity: 1;
+      right: 0;
+      width: 120px;
+      background: linear-gradient(90deg, rgba(8, 10, 16, 0.9) 10%, rgba(8, 10, 16, 0) 100%);
+  }}  
+
+  &__button-next {
+    @include swiperButton;
+    right: 0;
+
+    &::after {
+      @include pseudo-el;
+      width: 120px;
+      z-index: -1;
+      opacity: 1;
+      left: 0;
+    background: linear-gradient(270deg, rgba(8, 10, 16, 0.9) 27.52%, rgba(8, 10, 16, 0) 100%);
+     }
+  }
+}

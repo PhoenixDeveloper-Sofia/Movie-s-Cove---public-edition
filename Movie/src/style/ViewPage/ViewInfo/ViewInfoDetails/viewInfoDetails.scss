@@ -1,0 +1,53 @@
+.viewInfoDetails{
+    position: relative;
+    min-height: 412px;
+    display: flex;
+    align-items: end;
+    gap: 52px;
+
+    &__text{
+      @include flex-b;
+        gap: 10px;
+        width: 100%;
+
+    }
+}
+
+
+.viewInfoDetailsBlock{
+    background: $viewInfoDetails-background;
+    border-radius: 4px;
+    padding: 22px 30px;
+    min-height: 412px;
+    flex-grow:1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: space-between;
+
+    &__title {
+        @include titleInfo;
+        padding-bottom: 6px;
+    }
+
+    &__item {
+        @include flex;
+        padding-bottom: 10px;
+        gap: 10px;
+        font-size: 22px;
+        flex-wrap: wrap;
+
+        img {
+            max-height: 34px;
+        }
+    }
+
+    &__lastEllement{
+        @include gradient-text;
+    }
+
+    &__number{
+        font-family: $font-family-support;
+    }
+}

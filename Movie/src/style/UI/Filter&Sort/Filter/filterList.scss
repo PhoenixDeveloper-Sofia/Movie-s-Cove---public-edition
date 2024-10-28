@@ -1,0 +1,15 @@
+.filterList {
+    @include flex;
+    flex-wrap: wrap;
+    max-width: 520px;
+    gap: 7px;
+    
+    &__optionContaner{
+        position: relative;
+        width: 100%;
+    }
+}
+
+.filter__closeTriger{
+    @include absolute-ps;
+}

@@ -1,0 +1,58 @@
+.bannerTextEntered {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    padding-top: 16dvh;
+    padding-left: 12dvh;
+    max-height: 345px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @include width-mw($max-width: 532px);
+    }
+
+    &__title {
+        @include font($f-s: 60px, $f-w: 700);
+        max-height: 210px;
+        overflow: auto;
+        word-wrap: break-word;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+    }
+
+    &__description {
+        line-height: 160%;
+        opacity: 0.9;
+        text-align: justify;
+        max-height: 82px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__scroll {
+        position: relative;
+    }
+
+    &__scrollTooltip {
+        position: absolute;
+        top: 1;
+        bottom: 0;
+        right: -40px;
+
+    }
+
+    &__button-container {
+        @include flex;
+        padding-top: 35px;
+        gap: 16px;
+    }
+}

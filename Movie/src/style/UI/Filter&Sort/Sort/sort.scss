@@ -1,0 +1,24 @@
+.sort{
+    @include flex;
+    border-radius: 4px;
+    background-color: $filter-title-background;
+    backdrop-filter: blur(44px);
+    @include width-mw(405px);
+    margin-bottom: 7px;
+
+    &__option{
+        @include width-mw(135px);
+        padding: 10px 0px;
+        font-size: 18px;
+
+        &-active{
+            position: absolute;
+            z-index: -1;
+            background: $gradient-sort-active;
+            backdrop-filter:inherit;
+            border-radius:inherit;
+            width: 33%;
+            height: 100%;
+        }
+    }
+}

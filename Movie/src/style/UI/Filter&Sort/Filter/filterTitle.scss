@@ -1,0 +1,38 @@
+.filterTitle {
+    font-family: $font-family-support;
+    @include flex-b;
+    gap: 20px;
+    min-width: 120px;
+    font-size: 18px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    backdrop-filter: blur(44px);
+    background: $filter-title-background;
+
+    &:hover {
+        background: $filter-title-background-hover;
+        transition-duration: 250ms;
+    }
+
+    &__first {
+        background: $filter-title-background-first;
+
+        &:hover {
+            background: $filter-title-background-first-hover;
+            transition-duration: 250ms;
+        }
+    }
+
+    &__last {
+        background: $filter-title-background-last;
+
+        &:hover {
+            background: $filter-title-background-last-hover;
+            transition-duration: 250ms;
+        }
+    }
+
+    &__img {
+        max-height: 17px;
+    }
+}

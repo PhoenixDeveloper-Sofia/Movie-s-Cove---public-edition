@@ -1,0 +1,31 @@
+.viewInfoDetailsTrailerSwiper {
+    display: flex;
+    max-height: 412px;
+
+    &__swiper {
+        height: 100dvh;
+        max-height: 412px;
+        max-width: 100%;
+    }
+
+    &__slide {
+        @include flex-c;
+        @include font ($f-s: 22px, $f-w: 700,);
+        border-radius: 4px;
+        overflow: hidden;
+        width: 100dvw;
+        max-width: 340px;
+        height: 200px;
+        backdrop-filter: blur(44px);
+        background: $viewInfoDetails-background;
+
+        iframe {
+            @include center-screen;
+            width: 110%;
+            border-radius: inherit;
+            height: 100%;
+            border: none;
+            padding-right: 30px;
+        }
+    }
+}

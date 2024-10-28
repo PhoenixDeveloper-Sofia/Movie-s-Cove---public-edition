@@ -1,0 +1,18 @@
+.loader{
+    @include center-screen;
+    @include flex-c;
+
+    &__text{
+      @include font($f-s:35px,$f-w:800);
+      text-align:center;
+    }
+
+    &__img{
+        border-radius: 5px;
+    }
+    &__box{
+        @include flex-c;
+        gap: 40px;
+        @include font($f-s:38px,$f-w:800);
+    }
+}

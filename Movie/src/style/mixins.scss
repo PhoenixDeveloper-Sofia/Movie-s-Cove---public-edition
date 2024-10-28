@@ -1,0 +1,101 @@
+@mixin flex-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin center-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@mixin width-mw($max-width: 1660px) {
+    width: 100%;
+    max-width: $max-width;
+}
+
+@mixin font ($f-s: 18px, $f-w: 400, $color: $light ) {
+    font-weight: $f-w;
+    font-size: $f-s;
+    color: $color;
+}
+
+@mixin trim_text ($cl: 2) {
+    -webkit-line-clamp: $cl;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@mixin gradient-text($bg: $gradient-text) {
+    background: $bg;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin img ($bs: contain) {
+    background-repeat: no-repeat;
+    background-size: $bs;
+    background-position: center;
+}
+
+@mixin pseudo-el {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    content: " ";
+    position: absolute;
+}
+
+@mixin absolute-ps {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+}
+
+
+@mixin button-ban {
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+@mixin button-transparent($br: 8px) {
+    border-radius: $br;
+    border: $button-border;
+    backdrop-filter: blur(3px);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
+
+@mixin titleInfo {
+    font-weight: 900;
+    font-size: 26px;
+}
+
+@mixin swiperButton {
+    position: absolute;
+    padding: 40px;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+}

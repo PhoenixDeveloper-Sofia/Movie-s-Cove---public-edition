@@ -1,0 +1,28 @@
+.descriptionBar{
+    font-family: $font-family-support;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform:lowercase;
+
+    &__rating-year{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img{
+            max-height: 20px;
+        }
+    }
+
+    &__year,&__time,&__type{
+        opacity: 0.8;
+    }
+
+    &__time{
+        @include flex;
+        border-left: 0.50px solid rgba(255, 255, 255, 0.8);
+        border-right: 0.50px solid rgba(255, 255, 255, 0.8);
+        height: 12px;
+        padding: 0px 8px;
+    }
+}

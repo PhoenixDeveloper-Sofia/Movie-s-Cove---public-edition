@@ -1,0 +1,38 @@
+.header{
+    @include flex-b;
+    @include width-mw(1660px);
+   padding: 20px 30px;
+   z-index: 20;
+   position: absolute;
+   top: 0;
+   
+   &__options{
+    @include width-mw(810px);
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+   }
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    @include width-mw(486px);
+    @include font(18px,$f-w:300);
+ 
+
+   &__item:hover{
+    @include font($f-w:500);
+    transition-duration: 250ms;
+    
+   }
+
+   &__item-activ{
+    @include font($f-w:500);
+    border-bottom: 1px solid $light;
+    padding-bottom: 10px;
+    transition: 500ms ease-in-out;
+   }
+}

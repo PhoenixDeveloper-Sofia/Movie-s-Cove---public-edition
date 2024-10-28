@@ -1,0 +1,59 @@
+.headerSearchResult {
+    position: absolute;
+    padding: 7px 0px;
+    width: 100%;
+    top: 35px;
+    border-radius: 2px;
+    backdrop-filter: blur(12px);
+    background: $background-search;
+    overflow-x: hidden;
+    max-height: 270px;
+    overflow-y: auto;
+    height: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__item {
+        max-width: 100%;
+        padding: 4px 10px;
+        @include flex;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.05;
+            background: $background-search;
+            transition: 300ms ease-in-out;
+        }
+    }
+
+    &__img {
+        width: 50px;
+        height: 72px;
+
+    }
+
+    &__info {
+        font-size: 16px;
+        padding: 7px;
+
+        &-description {
+            font-family: $font-family-support;
+            @include flex;
+            gap: 7px;
+            padding-top: 7px;
+            width: 100%;
+            
+            img {
+                height: 16px;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        @include trim_text;
+    }
+}

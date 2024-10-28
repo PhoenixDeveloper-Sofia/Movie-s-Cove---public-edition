@@ -1,0 +1,36 @@
+.swiperEntered {
+    position: absolute;
+    padding-bottom: 30px;
+    bottom: 0;
+    width: 100dvw;
+    z-index: 3;
+
+    .swiper-wrapper {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__slide {
+        border-radius: 8px;
+        max-width: 150px !important;
+        height: 205px !important;
+        background-size: cover !important;
+        background-position: center !important;
+
+        &__active {
+            border-radius: 8px;
+            width: 190px !important;
+            height: 260px !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background: rgba(0, 0, 0, 0.5)
+        }
+
+        &::after {
+            border-radius: 8px;
+            @include pseudo-el;
+            background: rgba(0, 0, 0, 0.5)
+        }
+
+    }
+}

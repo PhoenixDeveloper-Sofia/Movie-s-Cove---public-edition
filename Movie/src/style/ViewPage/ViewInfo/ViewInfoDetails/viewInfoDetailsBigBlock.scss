@@ -1,0 +1,18 @@
+.viewInfoDetailsBigBlock {
+    width: 100dvw;
+    max-width: 640px;
+
+    &__countries {
+        border-left: 2px solid $accent;
+        padding-left: 8px;
+    }
+
+    &__genres {
+        font-size: 22px;
+        flex-wrap: wrap;
+
+        ul {
+            opacity: 1;
+        }
+    }
+}

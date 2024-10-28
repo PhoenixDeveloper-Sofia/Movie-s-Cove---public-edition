@@ -1,0 +1,92 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset.scss";
+
+// UI
+
+@import "./UI/Banner/glowingBanner.scss";
+
+@import "./UI/Banner/BannerPreview/bannerPreview.scss";
+@import "./UI/Banner/BannerPreview/BannerPreviewInfo/bannerPreviewInfo.scss";
+@import "./UI/Banner/BannerPreview/BannerPreviewInfo/bannerPreviewInfoGenres.scss";
+@import "./UI/Banner/BannerPreview/BannerPreviewInfo/bannerPreviewInfoNumberInfo.scss";
+
+@import "./UI/DescriptionBar/descriptionBar.scss";
+
+@import "./UI/Filter&Sort/Filter/filterList.scss";
+@import "./UI/Filter&Sort/Filter/filterOption.scss";
+@import "./UI/Filter&Sort/Filter/filterTitle.scss";
+@import "./UI/Filter&Sort/Sort/sort.scss";
+@import "./UI/Filter&Sort/filterMap.scss";
+
+@import "./UI/Logo/logo.scss";
+
+@import './UI/Rating/rating.scss';
+
+@import "./UI/Button/borderButton.scss";
+@import "./UI/Button/playButton.scss";
+@import "./UI/Button/navigationButton.scss";
+
+@import "./UI/PopUp&Modal/modal.scss";
+
+@import "./UI/Swiper/NavigationSwiper/navigationSwiperArrovBase.scss";
+@import "./UI/Swiper/moreContentSwiper.scss";
+@import "./UI/Swiper/swiperWrapper.scss";
+@import "./UI/Swiper/digitalTopSwiper.scss";
+
+@import "./UI/EnteredSlider/enteredSlider.scss";
+@import "./UI/EnteredSlider/bannerEntered.scss";
+@import "./UI/EnteredSlider/Info/bannerTextEntered.scss";
+@import "./UI/EnteredSlider/Info/modalTrailerEntered.scss";
+@import "./UI/EnteredSlider/Swiper/swiperEntered.scss";
+@import "./UI/EnteredSlider/Swiper/navigateSwiperEntered.scss";
+
+//Components
+@import "./Header/header.scss"; 
+@import "./Header/HeaderSearch/headerSearch.scss";
+@import "./Header/HeaderSearch/headerSearchResult.scss";
+
+@import "./Footer/footer.scss"; 
+
+@import "./Loader/loader.scss"; 
+
+@import "./Error/error.scss"; 
+@import "./Error/iconError.scss"; 
+
+@import "./ViewPage/viewInfo.scss";
+@import "./ViewPage/ViewInfo/viewInfoBanner.scss";
+@import "./ViewPage/ViewInfo/viewInfo.scss";
+@import "./ViewPage/ViewInfo/ViewInfoMain/viewInfoMain.scss";
+@import "./ViewPage/ViewInfo/ViewInfoMain/viewInfoMainContentTitle.scss";
+@import "./ViewPage/ViewInfo/ViewInfoMain/viewInfoMainContentDescription.scss";
+@import "./ViewPage/ViewInfo/ViewInfoDetails/viewInfoDetails.scss";
+@import "./ViewPage/ViewInfo/ViewInfoDetails/ViewInfoDetailsTrailerSwiper/viewInfoDetailsTrailerSwiper.scss";
+@import "./ViewPage/ViewInfo/ViewInfoDetails/ViewInfoDetailsTrailerSwiper/navigateSwiperViewInfoDetailsTrailerSwiper.scss";
+@import "./ViewPage/ViewInfo/ViewInfoDetails/viewInfoDetailsBigBlock.scss";
+@import "./ViewPage/ViewInfo/ViewInfoDetails/viewInfoDetailsSmallBlock.scss";
+@import "./ViewPage/ViewPlayer/viewPlayer.scss";
+@import "./ViewPage/ViewRecommendation/viewRecommendation.scss";
+
+@import "./SearchPage/searchPageInput.scss";
+
+.wrapper{
+    height: 100dvh;
+    display: grid;
+    justify-items: center;
+    grid-template-rows:  1fr auto;
+    position: relative;
+}
+
+.lastElement{
+ z-index: -1;
+ position: absolute;
+ left: 50%;
+ transform: translateY(-600%);
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-bottom: 30px;
+}
